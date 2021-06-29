@@ -17,8 +17,7 @@ module.exports = {
       //   propList:['*','!font','!font-size'],
       selectorBlackList: ['.ignore', '.hairlines', '.mint-', '.picker-'],  // (Array) The selectors to ignore and leave as px.
       minPixelValue: 1,       // (Number) Set the minimum pixel value to replace.
-      mediaQuery: false,       // (Boolean) Allow px to be converted in media queries.
-      exclude: ''
+      mediaQuery: false       // (Boolean) Allow px to be converted in media queries.
     },
     'postcss-viewport-units': {
       filterRule: rule => rule.selector.includes('::after') && rule.selector.includes('::before') && rule.selector.includes(':after') && rule.selector.includes(':before')
